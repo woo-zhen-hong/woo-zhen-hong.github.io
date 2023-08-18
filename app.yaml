@@ -1,0 +1,6 @@
+runtime: nodejs12
+service: notificationer
+handlers:
+  - url: /.*
+    script: auto
+    secure: always
