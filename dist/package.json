@@ -1,0 +1,46 @@
+{
+  "name": "notificationer",
+  "version": "0.0.1",
+  "description": "notificationer",
+  "author": "jackywu0203@gmail.com",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "0.18.1",
+    "core-js": "3.32.0",
+    "firebase": "8.10.1",
+    "precss": "4.0.0",
+    "quasar": "1.22.10",
+    "socket.io-client": "4.7.2",
+    "sass": "1.32.12",
+    "vue-apexcharts": "^1.6.2",
+    "compression": "^1.0.0",
+    "express": "^4.0.0",
+    "lru-cache": "6.0.0",
+    "vue": "^2.7.1",
+    "vue-server-renderer": "^2.7.1",
+    "vue-router": "^3.6.5",
+    "@quasar/babel-preset-app": "2.0.1"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "quasar": {
+    "ssr": true
+  }
+}
