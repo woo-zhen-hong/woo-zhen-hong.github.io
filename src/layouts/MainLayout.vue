@@ -10,7 +10,6 @@
 
 <script>
 
-import { firebaseDb } from 'boot/firebase'
 export default {
   name: 'MainLayout',
   components: {},

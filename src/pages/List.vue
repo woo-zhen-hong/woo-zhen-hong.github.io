@@ -68,13 +68,13 @@ export default {
         headerClasses: 'bg-primary text-white',
         label: '操作',
         align: 'center'
-      },{
+      }, {
         name: 'name',
         classes: 'bg-red text-white ellipsis',
         headerClasses: 'bg-primary text-white',
         label: '名稱',
         align: 'center'
-      },{
+      }, {
         name: 'expDate',
         classes: 'bg-red text-white ellipsis',
         headerClasses: 'bg-primary text-white',
@@ -89,11 +89,11 @@ export default {
       try {
         this._dbVmActoionListener = await firebaseDb.collection('record')
           .onSnapshot(async (doc) => {
-            let list = []
+            const list = []
             for (let i = 0, length = doc.docs.length; i < length; i = i + 1) {
-                const track = doc.docs[i].data()
-                track.id = doc.docs[i].id
-                list.push(track)
+              const track = doc.docs[i].data()
+              track.id = doc.docs[i].id
+              list.push(track)
             }
             this.props = list
           })
@@ -123,7 +123,7 @@ export default {
       }
     }
   },
-  mounted(){   
+  mounted () {
     this.showList()
   }
 }
